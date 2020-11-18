@@ -3,4 +3,4 @@ test_sic/build/
 test_sic/.idea/
 CleverAppWithLib/.idea/
 CleverAppWithLib/Pods/
-
+*.DS_Store
