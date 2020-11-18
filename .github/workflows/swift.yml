@@ -13,8 +13,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Pod install
-      run: pod install --project-directory=./Cleverbase
+
+    - name: Pod install Lib
+      run: pod install --project-directory=./CleverAppWithLib
+
+    - name: Pod install App
+      run: pod install --project-directory=./test_sic
 
     - name: Build
       run: xcodebuild -workspace ./CleverAppWithLib/CleverAppWithLib.xcworkspace -scheme CleverAppWithLib
